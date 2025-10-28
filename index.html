@@ -1,13 +1,56 @@
 <html>
     <head>
         <title>
-            My boba adventure!
+            My boba adventure! STAGE 2
         </title>
         <style>
             
+            
             body {
-                background-color: blanchedalmond;
                 text-align: center;
+                
+            }
+
+            #webdev {
+                color: black;
+            }
+
+            .cream {
+                background-color: #fff7f0;
+                color: #222;
+                padding: 1.25rem;
+                border-radius: 12px;
+                margin: 1rem auto;
+                max-width: 900px;
+                box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            }
+
+            .feature-image {
+                 display: block;   
+                margin: 1rem auto;
+                max-width: 90%;
+                height: auto;
+                border-radius: 12px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+                border: 1px solid rgba(0,0,0,0.06);
+                transition: transform 200ms ease, box-shadow 200ms ease;
+            }
+
+            .feature-image:hover {
+                transform: translateY(-4px) scale(1.01);
+                box-shadow: 0 14px 36px rgba(0,0,0,0.18);
+            }
+
+
+
+
+            .BOBA {
+                background-color: blanchedalmond;
+                max-width: 900px;
+                margin: 1rem auto;
+                padding: 1rem;
+                border-radius: 12px;
+                box-shadow: 0 6px 18px rgba(0,0,0,0.06);
             }
 
             .line {
@@ -16,7 +59,14 @@
         
             .HClogo {
                 width: 100px;
-                align-self:center;
+                align-self: center;
+                border-radius: 8px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+                transition: transform 180ms ease;
+            }
+
+            .HClogo:hover {
+                transform: translateY(-2px);
             }
 
             header {
@@ -24,34 +74,70 @@
             }
 
             .title {
-                vertical-align: middles;
+                vertical-align: middle;
             }
 
         </style>
     </head>
     <body>
-        <header>
-            <img class="HClogo" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club logo">
+        <div class="BOBA">
+        <header class="BOBA">
+            <img class="HClogo" src="images/flag-orpheus-top.png" alt="Hack Club logo">
             <h1 class="title" style="font: bolder;">Welcome Newcomer!</h1>
         </header>
+        
         <br>
-        <br>
-        <p>
-            Welcome to my website! A website that as I progress on my boba adventure with Hack Club, I will continue developing!
-        </p>
 
-        <details>
-            <summary>
-                Click me!
-            </summary>
-            <p>I seek to impress not depress!</p>
-        </details>
-        <hr class="line">
+        
+             <p>
+                Welcome to my website! A website that as I progress on my boba adventure with Hack Club, I will continue developing!
+            </p>
 
-        <hr class="line">
-        <p>
-            How much of my Boba adventure is done? <br>  <progress value="16" max="100">16%</progress>
+            <details>
+                <summary>
+                    Click me!
+                </summary>
+                <p>I seek to impress not depress!</p>
+            </details>
+            <hr class="line">
+
+            <p style="padding: 0px;">
+                How much of my Boba adventure is done? <br>  <progress value="16" max="100">16%</progress>
+            </p>
+        </div>
+        <div class="cream">
+            <h2>
+            Stage 2: Getting my ICE CREAM!
+            </h2>
+
+            <p>
+                I now have $5 for BOBA! Its great, but I want Ice cream!
+            </p>
+            <p>
+                <em>
+                    I found a 
+                    <a id="webdev" href="https://webdev.hackclub.com/">site</a>
+                </em>
+                One that would have me complete a series of challenges to get FOOD. <br> Exactly what I wanted. <br>
+                I prepared day and night. Training my HTML skills. <br>
+                <b> AND HERE I AM </b> Making this website.
+                The suspense...  <br>
+                The intense... <br>
+                BUT DO I BELIEVE?<br>
+                <b>YES</b>
+                
         </p>
+            <figure>
+                <img class="feature-image" src="images/icecream.png" alt="A colorful ice cream cone">
+                <figcaption style="font-size:0.9rem; color: #6b4a3a;">My dream ice cream 🍦</figcaption>
+            </figure>
+
+            <h3> 
+                So how much of my boba adventure is done?
+            </h3>
+            <meter value="32" min="0" low="30" high="80" optimum="50" max="100"></meter>
+        </div>
+        
 
     </body>
 </html>
